@@ -1,0 +1,19 @@
+path: /share/images/pinterest/
+train: images/train
+val: images/test
+test: images/validation
+
+names:
+  0: Accent_chairs_armchairs
+  1: Artwork
+  2: Bedding_blankets
+  3: Coffee_tables   
+  4: Decorative_pillows
+  5: Dining_chairs
+  6: End_tables
+  7: Pendant_lights_chandeliers
+  8: Potted_houseplants
+  9: Rugs
+  10: Sofas
+  11: Vases
+  12: Window_treatments

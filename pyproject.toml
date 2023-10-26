@@ -1,0 +1,44 @@
+[project]
+name = "yolov5"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "prampampam", email = "vashchenko1989@gmail.com" }
+]
+dependencies = [
+    "pip>=23.3",
+    "gitpython>=3.1.30",
+    "matplotlib>=3.3",
+    "numpy>=1.22.2",
+    "opencv-python>=4.1.1",
+    "Pillow>=7.1.2",
+    "PyYAML>=5.3.1",
+    "requests>=2.23.0",
+    "scipy>=1.4.1",
+    "thop>=0.1.1",
+    "ultralytics>=8.0.147",
+    "pandas>=1.1.4",
+    "seaborn>=0.11.0",
+    "setuptools>=68.2.2",
+    "psutil>=5.9.6",
+    "comet_ml>=3.34.1",
+    "torch>=2.1.0",
+    "torchvision>=0.16.0",
+    "ipykernel==6.26.0",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "torch @ file:///share/wheel/torch-2.1.0-cp311-cp311-linux_aarch64.whl",
+    "torchvision @ file:///share/wheel/torchvision-0.16.0-cp311-cp311-linux_aarch64.whl",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
